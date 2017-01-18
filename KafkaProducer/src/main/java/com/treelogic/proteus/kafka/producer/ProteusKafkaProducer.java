@@ -19,13 +19,13 @@ import java.util.Properties;
 
 public class ProteusKafkaProducer {
 
-	public static String PROTEUS_TABLE = "/developeridi/formacion/materiales/mifichero.txt";
-	public static String HDFS_URI = "hdfs://192.168.4.245:8020";
+	public static String PROTEUS_TABLE = "/my_folder_local_path/mytable.txt";
+	public static String HDFS_URI = "hdfs://MY_IP:PORT";
 	public static String PROTEUS_KAFKA_TOPIC = "proteus-test";
 	public static boolean TEST = true;
 	public static float SEND_SPEED = 1;
 	public static int LOOPS = 1;
-	public static String PROTEUS_HSM = "/proteus/originaldataset/hsm_data/part-00000.csv";
+	public static String PROTEUS_HSM = "/my_proteus_folder/originaldataset/hsm_data/part-00000.csv";
 	public static String PROTEUS_COILTIMESERIES = "/proteus/originaldataset/coiltimeseries/C0001/42252001-C0001.csv";
 	public static String PROTEUS_MERGED_TABLE = "/proteus/kafkainput/coiltimeseries.csv/000000_0";
 	private static final Logger logger = LoggerFactory.getLogger(ProteusKafkaProducer.class);
